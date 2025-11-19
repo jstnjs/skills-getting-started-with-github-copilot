@@ -88,14 +88,14 @@ section h3 {
 }
 
 .activity-card .participants ul {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
   margin: 0;
   display: block;
 }
 
 .activity-card .participants li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-size: 14px;
   color: #444;
   background: #fcfcff;
@@ -103,6 +103,29 @@ section h3 {
   border-radius: 6px;
   border: 1px solid #f0f0f5;
   box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participant-email {
+  word-break: break-word;
+  margin-right: 10px;
+  flex: 1 1 auto;
+}
+
+.unregister {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.unregister:hover {
+  background: rgba(198,40,40,0.08);
 }
 
 /* subtiele no-participants stijl */
